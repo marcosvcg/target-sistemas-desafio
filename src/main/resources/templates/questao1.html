@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1</title>
+    <link th:href="@{/styles/css/questao1.css}" rel="stylesheet">
+</head>
+<body>
+<h1>Verificar Número no Fibonacci</h1>
+
+<form action="#" th:action="@{/questao1}" method="get">
+    <label for="numeroInformado">Número desejado:</label>
+    <input type="number" id="numeroInformado" name="numeroInformado" required>
+
+    <label for="tamanhoDaSequencia">Tamanho da Sequência:</label>
+    <input type="number" id="tamanhoDaSequencia" name="tamanhoDaSequencia" required>
+
+    <button type="submit">Calcular</button>
+</form>
+
+<div th:if="${resultado}">
+    <h2 th:utext="${resultado}"></h2>
+</div>
+</body>
+</html>
