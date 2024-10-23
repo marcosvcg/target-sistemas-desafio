@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 2</title>
+    <link th:href="@{/styles/css/questao2.css}" rel="stylesheet">
+</head>
+<body>
+<h1>Contador de Ocorrências da Letra A</h1>
+
+<form action="#" th:action="@{/questao2}" method="get">
+    <label for="texto">Digite seu texto:</label>
+    <textarea id="texto" name="texto" required></textarea>
+    <button type="submit">Contar</button>
+</form>
+
+<div th:if="${quantidade != null}" class="resultado">
+    <h2>Texto informado: <span th:text="${texto}"></span></h2>
+    <h2>Quantidade de ocorrências: <span th:text="${quantidade}"></span></h2>
+</div>
+</body>
+</html>
