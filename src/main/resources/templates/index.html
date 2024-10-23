@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Técnico</title>
+    <link th:href="@{/styles/css/pagina_inicial.css}" rel="stylesheet"> <!-- Link para o CSS -->
+</head>
+<body>
+<div class="content">
+    <h1>Desafio Target Sistemas</h1>
+    <p>Resolução das questões:</p>
+    <ul>
+        <li><a th:href="@{/questao1}">Questão 1: Fibonacci</a></li>
+        <li><a th:href="@{/questao2}">Questão 2: Contador de Ocorrências da Letra A</a></li>
+    </ul>
+</div>
+
+<footer>
+    <h2>Meu LinkedIn:</h2>
+    <a href="https://www.linkedin.com/in/marcos-galv%C3%A3o-121117250/" target="_blank">Clique aqui para acessar</a>
+</footer>
+</body>
+</html>
